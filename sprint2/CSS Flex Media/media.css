@@ -56,7 +56,7 @@
     padding: 20px;
   }
 
-  /* @media screen and (max-width: 922px) {
+   @media screen and (max-width: 922px) {
       body {
           background-color: blue;
       }
@@ -69,26 +69,28 @@
       }
   }
 
-  @media screen and (max-width:600px) {
+    @media screen and (max-width:600px) {
       body {
           background-color: olive;
           color: white;
       }
       .header {
           display: none;
+          /* visibility: hidden; */
       }
       .navbar {
           display: flex;
           flex-direction: column;
           background-color: #222;
-      }
+      } 
       .row {
           /* width: 80%; */
           flex-direction: column;
           /* margin: 0 auto; */
-          align-items: center;
+          /* align-items:stretch; */
+          align-content: center;
       }
      .column {
-         width: 80%;
+         width: 50%;
      }
-  } */
+  }   
