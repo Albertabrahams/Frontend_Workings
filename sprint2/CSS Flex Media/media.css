@@ -56,7 +56,7 @@
     padding: 20px;
   }
 
-  @media screen and (max-width: 922px) {
+  /* @media screen and (max-width: 922px) {
       body {
           background-color: blue;
       }
@@ -91,4 +91,4 @@
      .column {
          width: 80%;
      }
-  }
+  } */
