@@ -116,7 +116,7 @@ nav .navbar ul li input {
   color: white;
   width: 25%;
   height: 200px;
-  border: 1px solid red;
+  border: 5px solid red;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -127,7 +127,7 @@ nav .navbar ul li input {
   color: blue;
   width: 25%;
   height: 200px;
-  border: 1px solid red;
+  border: 5px solid red;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -138,7 +138,7 @@ nav .navbar ul li input {
   color: gray;
   width: 25%;
   height: 200px;
-  border: 1px solid red;
+  border: 5px solid red;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -149,7 +149,7 @@ nav .navbar ul li input {
   color: black;
   width: 25%;
   height: 200px;
-  border: 1px solid red;
+  border: 5px solid red;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -157,6 +157,7 @@ nav .navbar ul li input {
 
 article .article2 {
   background-color: purple;
+  font-size: 50px;
 }
 
 .socialBoxes {
