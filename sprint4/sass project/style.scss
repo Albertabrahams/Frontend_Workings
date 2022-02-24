@@ -1,3 +1,81 @@
+@import "reset"; 
+@import "variables";
+
 .container{
-    color: blue;
+    padding: 0 1rem;
 }
+
+//! Using Variables
+body{
+    background-color: $bgColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+//! Using Nesting
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: $navBgColor;
+
+    .brand{
+        img{
+            width: 80px;
+            border: $navBgColor;
+            border-radius: 30%;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+    .navbar{
+        margin: 10px;
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                a{
+                    text-decoration: none;
+                    padding: 5px;
+                    color: black;
+                    font-size: $myLinkSize;
+                }
+                input{
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
+
+//? SLIDER  Nesting
+
+.slider {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $sliderBgColor;
+    .left {
+      margin-top: 20px;
+      button {
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: $navBgColor;
+        font-size: $myLinkSize;
+        border: 2px solid gray;
+  
+        /***  IMPORTANT  ***/
+        &:hover {
+          background-color: green;
+          border: 2px solid pink;
+        }
+      }
+    }
+    img {
+      width: 30%;
+    }
+  }
+
+//! Mixin Usage
+
