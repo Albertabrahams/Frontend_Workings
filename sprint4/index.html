@@ -38,18 +38,22 @@
   },
 };
 
-const note = {
-    id : 1,
-    title : 'my first note',
-    date : "11.1.2022",
-};
-for (let[key,value] of Object.entries(note)){
-    console.log(key,"=>",value);
+// function sum(){
+//     sum=0;
+//     for(let i=0;i<arguments.length;i++){
+//         sum += arguments[i];
+//     }
+//     return sum;
+// }
+function sum(...numbers){
+    total = 0;
+    numbers.forEach((i)=>{
+        total = !isNaN(i) ? total+i : total
+    })
+    return total;
 }
 
-Object.entries(note).forEach(([key,value])=>{
-    console.log(key,"=>",value);
-})
+console.log(sum(4,5,"halil",2));
 
     </script>
 </body>
