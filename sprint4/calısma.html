@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const adlar = ["Ahmet", "Can","Mustafa","Ayşe","Elif"];
+        const soyAdlar= ["Öztürk", "Yılmaz", "Arı", "Çalı", "Yazı"];
+        const birleştir = (x,y) => {
+            let adVeSoyadlar = [];
+            for (let i in x) {
+            adVeSoyadlar[i] = `${x[i]} ${y[i]}`;
+            }
+            return adVeSoyadlar;
+            };
+            console.log(birleştir(adlar, soyAdlar))
+    </script>
+</body>
+</html>
