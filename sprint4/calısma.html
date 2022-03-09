@@ -8,16 +8,21 @@
 </head>
 <body>
     <script>
-        const adlar = ["Ahmet", "Can","Mustafa","Ayşe","Elif"];
-        const soyAdlar= ["Öztürk", "Yılmaz", "Arı", "Çalı", "Yazı"];
-        const birleştir = (x,y) => {
-            let adVeSoyadlar = [];
-            for (let i in x) {
-            adVeSoyadlar[i] = `${x[i]} ${y[i]}`;
-            }
-            return adVeSoyadlar;
-            };
-            console.log(birleştir(adlar, soyAdlar))
+        // const sayılar = [-5, 15, 22, -4, 45, 78, -25];
+        // let sonuç = 0;
+        // for (let i of sayılar) {
+        // sonuç += sayılar[i];
+        // }
+        // console.log(sonuç)
+
+        const sayılar = [-5, 15, 22, -4, 45, 78, -25];
+        let sonuç = 0;
+        for (let i of sayılar) {
+        console.log(i)
+        sonuç += i;
+        }
+        console.log(sonuç)
+
     </script>
 </body>
 </html>
