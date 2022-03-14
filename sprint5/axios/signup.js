@@ -30,9 +30,10 @@ const postCustomerRegister = async() =>{
             removeLoading();
         }
         else{
-            localStorage.setItem("baseUrl","https://reqres.in");
-            localStorage.setItem("apiKey", userData.token);
+            localStorage.setItem("baseUrl",EncryptStringAES("https://reqres.in"));
+            localStorage.setItem("apiKey", EncryptStringAES(userData.token));
             removeLoading();
+            window.location.href = "userList.html";
         }
     }
     catch(error){

@@ -1,15 +1,20 @@
 const tbody = document.getElementById("tbodyUserList");
 
 window.onload = () => {
+    alert(`Your apiKey is: " ${DecryptStringAES(localStorage.getItem("apiKey"))}`);
     getApiUserList();
-    setInterval(getApiUserList, 5000)
+    setInterval(getApiUserList, 5000);
 }
 
 const getApiUserList = async() => {
     showLoading();
     //axios
     try{
-    const responseData = await axios("https://reqres.in/api/users?page=1");
+    // const responseData = await axios("https://reqres.in/api/users?page=1");
+    const responseData = await axios({
+        url : "https://reqres.in/api/users?page=1",
+        method: "get"
+    })
     const { data : userListArray } = responseData.data;
     console.log(userListArray);
     if(userListArray.length===0){
